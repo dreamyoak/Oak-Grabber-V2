@@ -1,0 +1,11 @@
+requests
+uuid
+psutil
+asyncio
+Crypto
+
+colorama
+pyobf2
+requests
+InquirerPy
+rich
