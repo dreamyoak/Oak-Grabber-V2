@@ -59,5 +59,8 @@ Special thanks to [@nagogy](https://github.com/nagogy), [@addi00000](https://git
  <img src="https://img.shields.io/github/forks/dynastyoak/Oak-Grabber-V2" alt="dynastyoak" />
 </div>
 
+
 ## Contact 
 <a href="https://discord.com/users/1007661460572356628" target="blank"><img align="center" src="https://i.imgur.com/VtzG3Ea.png" alt="321312" height="30" width="40" /></a>
+
+Please ⭐ this repo
