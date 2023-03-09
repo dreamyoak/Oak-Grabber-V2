@@ -53,7 +53,7 @@ Special thanks to [@nagogy](https://github.com/nagogy), [@addi00000](https://git
 
 ## Stats 
 <div align="center">
- <img src="https://komarev.com/ghpvc/?username=oakgrabberV2&label=views&color=000000&style=flat" alt="dynastyoak" />
+ <img src="https://komarev.com/ghpvc/?username=oakV2&label=views&color=000000&style=flat" alt="dynastyoak" />
  <img src="https://img.shields.io/github/stars/dynastyoak/Oak-Grabber-V2" alt="dynastyoak" /> 
  <img src="https://img.shields.io/github/watchers/dynastyoak/Oak-Grabber-V2" alt="dynastyoak" />
  <img src="https://img.shields.io/github/forks/dynastyoak/Oak-Grabber-V2" alt="dynastyoak" />
