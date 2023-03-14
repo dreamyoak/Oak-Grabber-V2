@@ -9,4 +9,4 @@ if %errorlevel% equ 0 (
     start "install python.bat"
 )
 py -m pip install --upgrade -r requirements.txt
-start builder.py
+python builder.py
