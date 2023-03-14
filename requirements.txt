@@ -3,6 +3,7 @@ uuid
 psutil
 asyncio
 Crypto
+pycryptodome
 
 colorama
 pyobf2
