@@ -4,7 +4,7 @@ psutil
 asyncio
 Crypto
 pycryptodome
-
+pyinstaller
 colorama
 pyobf2
 requests
